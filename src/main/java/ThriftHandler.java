@@ -253,6 +253,11 @@ public class ThriftHandler implements ThriftService.Iface {
         return ret;
     }
 
+    /**
+     * This method is to do the stock
+     * @param request the message that we want to operate
+     * @return messaage to indicate the result of the operation
+     */
     @Override
     public String updateProductRequestFromClient(ProductRequest request) {
         printConsole("Server with port number " + this.portNumber +  " receive request: " + request);
